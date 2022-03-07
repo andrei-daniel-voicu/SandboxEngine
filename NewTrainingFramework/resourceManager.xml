@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resourceManager>
+	<models>
+		<model id="0" name="Croco.nfg" path="../Resources/Models/Croco.nfg"></model>
+		<model id="1" name="Bila.nfg" path="../Resources/Models/Bila.nfg"></model>
+		<model id="2" name="Skybox.nfg" path="../Resources/Models/Skybox.nfg"></model>
+		<model id="3" name="fire.nfg" path="../Resources/Models/Fire.nfg"></model>
+		<model id="4" name="witch.nfg" path="../Resources/Models/witch.nfg"></model>
+	</models>
+	<shaders>
+		<shader id="0" name="TriangleShaderVS.vs" path="../Resources/Shaders/TriangleShaderVS.vs"></shader>
+		<shader id="1" name="TriangleShaderFS.fs" path="../Resources/Shaders/TriangleShaderFS.fs"></shader>
+		<shader id="2" name="TerrainShaderVS.vs" path="../Resources/Shaders/TerrainShaderVS.vs"></shader>
+		<shader id="3" name="TerrainShaderFS.fs" path="../Resources/Shaders/TerrainShaderFS.fs"></shader>
+		<shader id="4" name="SkyboxShaderVS.vs" path="../Resources/Shaders/SkyboxShaderVS.vs"></shader>
+		<shader id="5" name="SkyboxShaderFS.fs" path="../Resources/Shaders/SkyboxShaderFS.fs"></shader>
+		<shader id="6" name="FireShaderVS.vs" path="../Resources/Shaders/FireShaderVS.vs"></shader>
+		<shader id="7" name="FireShaderFS.fs" path="../Resources/Shaders/FireShaderFS.fs"></shader>
+		<shader id="8" name="ReflectedShaderVS.vs" path="../Resources/Shaders/ReflectedShaderVS.vs"></shader>
+		<shader id="9" name="ReflectedShaderFS.fs" path="../Resources/Shaders/ReflectedShaderFS.fs"></shader>
+		<shader id="10" name="LineShaderVS.vs" path="../Resources/Shaders/LineShaderVS.vs"></shader>
+		<shader id="11" name="LineShaderFS.fs" path="../Resources/Shaders/LineShaderFS.fs"></shader>
+		<shader id="12" name="ProjectionShaderVS.vs" path="../Resources/Shaders/ProjectionShaderVS.vs"></shader>
+		<shader id="13" name="ProjectionShaderFS.fs" path="../Resources/Shaders/ProjectionShaderFS.fs"></shader>
+	</shaders>
+	<textures>
+			<texture id="0" type="2d" name="Croco.tga" path="../Resources/Textures/Croco.tga" min_filter="LINEAR" mag_filter="LINEAR" wrap_s="CLAMP_TO_EDGE" wrap_t="CLAMP_TO_EDGE" ></texture>
+			<texture id="1" type="2d" name="Dirt.tga" path="../Resources/Textures/Dirt.tga" min_filter="LINEAR" mag_filter="LINEAR" wrap_s="REPEAT" wrap_t="REPEAT" ></texture>
+			<texture id="2" type="2d" name="Grass.tga" path="../Resources/Textures/Grass.tga" min_filter="LINEAR" mag_filter="LINEAR" wrap_s="REPEAT" wrap_t="REPEAT" ></texture>
+			<texture id="3" type="2d" name="Rock.tga" path="../Resources/Textures/Rock.tga" min_filter="LINEAR" mag_filter="LINEAR" wrap_s="REPEAT" wrap_t="REPEAT" ></texture>
+            <texture id="4" type="2d" name="Terrain_blend_map" path="../Resources/Textures/Terrain_blend_map.tga" min_filter="LINEAR" mag_filter="LINEAR" wrap_s="REPEAT" wrap_t="REPEAT" ></texture>
+			<texture id="5" type="cube" name="envMap0" path="../Resources/Textures/envMap/envMap0.tga" min_filter="LINEAR" mag_filter="LINEAR" wrap_s="CLAMP_TO_EDGE" wrap_t="CLAMP_TO_EDGE"></texture>
+			<texture id="6" type="cube" name="envMap1" path="../Resources/Textures/envMap/envMap1.tga" min_filter="LINEAR" mag_filter="LINEAR" wrap_s="CLAMP_TO_EDGE" wrap_t="CLAMP_TO_EDGE"></texture>
+			<texture id="7" type="cube" name="envMap2" path="../Resources/Textures/envMap/envMap2.tga" min_filter="LINEAR" mag_filter="LINEAR" wrap_s="CLAMP_TO_EDGE" wrap_t="CLAMP_TO_EDGE"></texture>
+			<texture id="8" type="cube" name="envMap3" path="../Resources/Textures/envMap/envMap3.tga" min_filter="LINEAR" mag_filter="LINEAR" wrap_s="CLAMP_TO_EDGE" wrap_t="CLAMP_TO_EDGE"></texture>
+			<texture id="9" type="cube" name="envMap4" path="../Resources/Textures/envMap/envMap4.tga" min_filter="LINEAR" mag_filter="LINEAR" wrap_s="CLAMP_TO_EDGE" wrap_t="CLAMP_TO_EDGE"></texture>
+			<texture id="10" type="cube" name="envMap5" path="../Resources/Textures/envMap/envMap5.tga" min_filter="LINEAR" mag_filter="LINEAR" wrap_s="CLAMP_TO_EDGE" wrap_t="CLAMP_TO_EDGE"></texture>
+			<texture id="11" type="2d" name="fire_mask" path="../Resources/Textures/fire_mask.tga" min_filter="LINEAR" mag_filter="LINEAR" wrap_s="CLAMP_TO_EDGE" wrap_t="CLAMP_TO_EDGE"></texture>
+			<texture id="12" type="2d" name="fire3" path="../Resources/Textures/fire3.tga" min_filter="LINEAR" mag_filter="LINEAR" wrap_s="CLAMP_TO_EDGE" wrap_t="CLAMP_TO_EDGE"></texture>
+			<texture id="13" type="2d" name="DisplacementMap" path="../Resources/Textures/DisplacementMap.tga" min_filter="LINEAR" mag_filter="LINEAR" wrap_s="REPEAT" wrap_t="REPEAT"></texture>
+			<texture id="14" type="2d" name="fog" path="../Resources/Textures/envMap/envMap3.tga" min_filter="LINEAR" mag_filter="LINEAR" wrap_s="CLAMP_TO_EDGE" wrap_t="CLAMP_TO_EDGE"></texture>
+			<texture id="15" type="2d" name="water" path="../Resources/Textures/WaterNormal.tga" min_filter="LINEAR" mag_filter="LINEAR" wrap_s="REPEAT" wrap_t="REPEAT"></texture>
+			<texture id="16" type="2d" name="Marine.tga" path="../Resources/Textures/Marine.tga"min_filter="LINEAR" mag_filter="LINEAR" wrap_s="REPEAT" wrap_t="REPEAT"></texture>
+			<texture id="17" type="2d" name="Witch.tga" path="../Resources/Textures/Witch.tga" min_filter="LINEAR" mag_filter="LINEAR" wrap_s="CLAMP_TO_EDGE" wrap_t="CLAMP_TO_EDGE" ></texture>
+	</textures>
+	<materials>
+	</materials>
+</resourceManager>

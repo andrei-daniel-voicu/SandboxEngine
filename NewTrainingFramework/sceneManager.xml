@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sceneManager>
+	<gameName>My game engine</gameName>
+	<properties>
+		<fog r="100" R="800" textureId="14"></fog>
+	</properties>
+	<defaultScreenSize>
+		<width>960</width>
+		<height>720</height>
+	</defaultScreenSize>
+	<backgroundColor>
+		<r>0.0</r>
+		<g>0.0</g>
+		<b>0.0</b>
+	</backgroundColor>
+	<controls>
+		<control>
+			<key>W</key>
+			<action>MOVE_CAMERA_POSITIVE_Z</action>
+		</control>
+		<control>
+			<key>S</key>
+			<action>MOVE_CAMERA_NEGATIVE_Z</action>
+		</control>
+	</controls>
+	
+	
+	<cameras>
+		<camera id="0" type="firstPerson" position="0 0 1" target="0 0 1" up="0 1 0" translationSpeed="10" rotationSpeed="0.3" fov="45" near="0.2" far="10000"></camera>
+	</cameras>
+				
+	<objects>
+		<object type="normal" id="0" modelId="4" textureId="17" shaderId="0" name="Vrajitoare"
+		position="0 0 0" rotation="0 0 0" scale="0.05 0.05 0.05"
+		trajectoryType="linear" iteration="infinite" direction="alternate" speed="40"
+		points="10 7 1;20 -10 -5;-40 20 10;10 7 1">
+		</object>
+		
+		<object type="normal" id="1" modelId="4" textureId="17" shaderId="0" name="Vrajitoare"
+		position="10 10 10" rotation="0 0 0" scale="0.05 0.05 0.05"
+		trajectoryType="circle" iteration="infinite" direction="alternate" speed="40"
+		radius="50" rotationPlane="2 3 1;1 7 3">
+		</object>
+		
+		<object type="reflected" id="2" modelId="1" textureId="15" shaderId="8" name="Bila" position="0 0 0" rotation="0 0 0" scale="0.1 0.1 0.1"></object>
+		<object type="terrain" id="3" modelId="generated" textureId="1 2 3 4" shaderId="2" name="Teren" nrCells="100" sizeCell="20" offsetY="-100" height="200 150 100" rotation="0 0 0" scale="1 1 1"></object>
+		<object type="skybox" id="4" modelId="2" textureId="5" shaderId="4" name="Skybox" offsetX="10" offsetZ="10" position="0 0 0" rotation="0 0 0" scale="1000 1000 1000"></object>
+		<object type="fire" id="5" modelId="3" textureId="11 12 13" shaderId="6" name="Fire" position="0 0 0" rotation="0 0 0" scale="0.5 1 1" dispMax="0.2"></object>
+	</objects>
+	<debugSettings>
+		<lineShader id="10"></lineShader>
+		<objectAxes>
+			<OXColor>
+				<r>1.0</r>
+				<g>0.0</g>
+				<b>0.0</b>
+			</OXColor>
+			<OYColor>
+				<r>0.0</r>
+				<g>1.0</g>
+				<b>0.0</b>
+			</OYColor>
+			<OZColor>
+				<r>0.0</r>
+				<g>0.0</g>
+				<b>1.0</b>
+			</OZColor>
+		</objectAxes>
+		<camAxes>
+			<OXColor>
+				<r>1.0</r>
+				<g>1.0</g>
+				<b>0.0</b>
+			</OXColor>
+			<OYColor>
+				<r>0.0</r>
+				<g>1.0</g>
+				<b>1.0</b>
+			</OYColor>
+			<OZColor>
+				<r>1.0</r>
+				<g>0.0</g>
+				<b>1.0</b>
+			</OZColor>
+		</camAxes>
+	</debugSettings>
+	
+</sceneManager>
